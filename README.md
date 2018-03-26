@@ -14,9 +14,9 @@ git clone https://github.com/udacity/dog-project.git
 cd dog-project
 ```
 
-2. Download the dog dataset using `wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip .`.  Unzip the folder at location `path/to/dog-project/dogImages`. 
+2. Download the dog dataset using `wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip`.  Unzip the folder at location `path/to/dog-project/dogImages`. 
 
-3. Download the human dataset using `wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip .`.  Unzip the folder at location `path/to/dog-project/lfw`.
+3. Download the human dataset using `wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip`.  Unzip the folder at location `path/to/dog-project/lfw`.
 
 4. Donwload the VGG-16 bottleneck features using `wget https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz` for the dog dataset.  Place it in the repo, at location `path/to/dog-project/bottleneck_features`. You might need other structures in the transfer learning practice. Feel free to use similar command and place them in the same folder.
 	
@@ -31,5 +31,5 @@ KERAS_BACKEND=tensorflow python -c "from keras import backend"
 ```
 7. Run jupyter, and it will print out a url in the session. Then open your browser, and paste the url with `X.X.X.X:8888`. `X.X.X.X` is your EC2 instance IP, then use 8888 instead of 0000 and paste your token. You should have your notebook open.
 ```
-jupyter notebook dog_app.ipynb
+jupyter notebook --ip=0.0.0.0 --no-browser
 ```
